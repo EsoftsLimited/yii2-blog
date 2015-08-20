@@ -31,8 +31,8 @@ class ViewsCounterWidget extends \yii\base\Widget
 
             ++$this->model->views;
             $this->model->detachBehavior('timestamp');
-            $this->model->save();
-
+            $this->model->save(false);
+            
             Yii::$app->session->set('postViewsIncremented', true);
         }
 
@@ -47,6 +47,7 @@ class ViewsCounterWidget extends \yii\base\Widget
      */
     protected static function allowViewsIncrement()
     {
+        return true;
         return Yii::$app->session->get('postViewsIncremented') ? false : true;
     }
 }

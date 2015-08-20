@@ -121,13 +121,19 @@ class Post extends ActiveRecord
     {
         return new PostQuery(get_called_class());
     }
-
+    /**
+     * @inheritdoc
+     */
+    public function getUrl()
+    {
+      return call_user_func_array(Yii::$app->getModule('blog')->viewPostUrlCallback, ['model' => $model]);
+    }
     /**
      * @inheritdoc
      */
     public function afterFind()
     {
-        $this->thumbnail = $this->getThumbnailModel()->id;
+        $this->thumbnail = @$this->getThumbnailModel()->id;
     }
 
     /**

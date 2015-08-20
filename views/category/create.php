@@ -15,9 +15,7 @@ if ($this->context->module->autoTranslit) {
     TranslitAsset::register($this);
 }
 ?>
-<div class="category-create">
-
-    <h1><?= $this->title ?></h1>
+<div class="category-create">   
 
     <?= $this->render('_form', [
         'model' => $model,

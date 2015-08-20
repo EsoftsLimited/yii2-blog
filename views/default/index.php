@@ -69,17 +69,17 @@ $assetPath = BlogAsset::register($this)->baseUrl;
             </div>
         </div>
 
-<!--        <div class="col-md-3">-->
-<!---->
-<!--            <div class="text-center">-->
-<!--                <h2>-->
-<!--                    --><?//= Html::a(Module::t('main', 'Settings'), ['default/settings']) ?>
-<!--                </h2>-->
-<!--                --><?//= Html::a(
-//                    Html::img($assetPath . '/images/settings.png', ['alt' => 'Tools'])
-//                    , ['default/settings']
-//                ) ?>
-<!--            </div>-->
-<!--        </div>-->
+        <div class="col-md-3">
+
+            <div class="text-center">
+                <h2>
+                    <?= Html::a(Module::t('main', 'Settings'), ['default/settings']) ?>
+                </h2>
+                <?= Html::a(
+                    Html::img($assetPath . '/images/settings.png', ['alt' => 'Tools'])
+                    , ['default/settings']
+                ) ?>
+            </div>
+        </div>
     </div>
 </div>

@@ -39,7 +39,7 @@ Configuration:
         'editorOptions' => [],
         // callback function for create post view url. Have $model argument.
         'viewPostUrlCallback' => function($model) {
-                return '/' . $model->alias;
+                return '/' . $model->id;
             },
     ],
 ],

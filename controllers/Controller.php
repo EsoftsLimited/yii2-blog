@@ -10,6 +10,7 @@ use Yii;
  */
 class Controller extends \yii\web\Controller
 {
+
     /**
      * @inheritdoc
      */
@@ -22,6 +23,17 @@ class Controller extends \yii\web\Controller
                     'delete' => ['post'],
                 ],
             ],
+            'access' => [
+                'class' => \yii\filters\AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true,
+                        'roles' => ['@'],
+                        
+                    ],
+                ]
+            ]
+
         ];
     }
 }

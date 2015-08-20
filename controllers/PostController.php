@@ -56,6 +56,11 @@ class PostController extends Controller
     public function actionCreate()
     {
         $model = new Post();
+        if(isset($_GET['type'])){
+          $_GET['Post']['type_id']=$_GET['type'];
+        }elseif(empty($_GET)){
+            $_GET['Post']['type_id']=6; 
+        }
         $model->load(Yii::$app->request->get());
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {

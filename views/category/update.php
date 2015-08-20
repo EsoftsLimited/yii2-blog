@@ -12,9 +12,7 @@ $this->params['breadcrumbs'][] = ['label' => Module::t('main', 'Categories'), 'u
 $this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
 $this->params['breadcrumbs'][] = Module::t('main', 'Update category');
 ?>
-<div class="category-update">
-
-    <h1><?= Html::encode($this->title) ?></h1>
+<div class="category-update">   
 
     <?= $this->render('_form', [
         'model' => $model,

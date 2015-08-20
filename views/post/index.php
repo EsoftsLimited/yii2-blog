@@ -28,7 +28,7 @@ BlogAsset::register($this);
             <?= $this->render('_new', ['model' => $model]) ?>
         </div>
         <?php if ($titles = Post::getTitles()) : ?>
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <?php echo $this->render('_search', ['model' => $searchModel, 'titles' => $titles]); ?>
             </div>
         <?php endif; ?>
@@ -42,7 +42,7 @@ BlogAsset::register($this);
 //                'attribute' => 'original_thumbnail',
 //                'format' => 'html',
 //                'value' => function($model) {
-//                        $thumb = $model->getThumbnail($this->context->module->adminThumbnail);
+//                        $thumb = $model->getThumbnail("");
 //                        return !empty($thumb) ? Html::a(
 //                            Html::img($thumb),
 //                            ['post/update', 'id' => $model->id]

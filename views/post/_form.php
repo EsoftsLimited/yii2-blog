@@ -8,6 +8,7 @@ use pendalf89\blog\assets\BlogAsset;
 use pendalf89\blog\Module;
 use pendalf89\filemanager\widgets\FileInput;
 use pendalf89\filemanager\widgets\TinyMce;
+use common\widgets\ImageSelector;
 
 /* @var $this yii\web\View */
 /* @var $model pendalf89\blog\models\Post */
@@ -38,12 +39,21 @@ BlogAsset::register($this);
                         'clientOptions' => $this->context->module->editorOptions,
                     ]); ?>
 
-                    <?= $form->field($model, 'preview')->widget(TinyMce::className(), [
+                    <?php
+                     \Yii::$app->meta->set(['preview'=>['class'=>'','label'=>'Preview','content'=>$form->field($model, 'preview')->widget(TinyMce::className(), [
                         'clientOptions' => $this->context->module->editorOptions,
-                    ]); ?>
+                         ])->label(false)]]);
+                      \Yii::$app->meta->set(['meta_description'=>['class'=>'','label'=>'Meta Description','content'=>$form->field($model, 'meta_description')->textarea(['rows' => 6])->label(false)]]);
+                      \Yii::$app->meta->set(['gallery'=>['class'=>'','label'=>'Post Gallery','content'=>ImageSelector::widget(['fileInputOptions'=>['callbackBeforeInsert'=>'function(e,data){ alert("");}']])]]);
+                    ?>                    
+                    <?php
+                      
+                      if(\Yii::$app->meta->hasMeta()){
+                        \Yii::$app->meta->display();
+                      }
 
-                    <?= $form->field($model, 'meta_description')->textarea(['rows' => 6]) ?>
 
+                     ?>
                 </div>
             </div>
         </div>

@@ -4,7 +4,8 @@ namespace pendalf89\blog\models;
 
 use Yii;
 use pendalf89\blog\Module;
-
+use pendalf89\filemanager\behaviors\MediafileBehavior;
+use pendalf89\filemanager\models\Mediafile;
 /**
  * This is the model class for table "blog_category".
  *
@@ -18,6 +19,7 @@ use pendalf89\blog\Module;
  */
 class Category extends \yii\db\ActiveRecord
 {
+    public $thumbnail;
     /**
      * @inheritdoc
      */
@@ -25,14 +27,59 @@ class Category extends \yii\db\ActiveRecord
     {
         return 'blog_category';
     }
+    /**
+     * @inheritdoc
+     */
+    public function behaviors()
+    {
+        return [
+            'mediafile' => [
+                'class' => MediafileBehavior::className(),
+                'name' => 'category',
+                'attributes' => [
+                    'thumbnail',
+                ],
+            ]
+        ];
+    }
+    public function getImage(){
+        return  Mediafile::loadOneByOwner('category', $this->id, 'thumbnail');
+    }
+    /**
+     * Thumbnail url by alias
+     *
+     * @param string $alias thumbnail alias
+     * @return string thumbnail url
+     */
+    public function getThumbnailUrl($alias)
+    {
+        $thumbnail = $this->getImage();
+        return $thumbnail ? $thumbnail->getThumbUrl($alias) : '';
+    }
+        /**
+     * Html thumbnail image tag
+     *
+     * @param string $alias thumbnail alias
+     * @param array $options html options
+     * @return string Html image tag
+     */
+    public function getThumbnailImage($alias, $options=[])
+    {
+        $thumbnail = $this->getImage();
 
+        if (empty($thumbnail)) {
+            return '';
+        }
+
+        return $thumbnail->getThumbImage($alias, $options);
+    }
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['parent_id', 'position'], 'integer'],
+            [['parent_id', 'position','thumbnail'], 'integer'],
             [['title', 'alias'], 'required'],
             [['title', 'alias'], 'string', 'max' => 255]
         ];
