@@ -1,6 +1,6 @@
 <?php
 
-namespace pendalf89\blog\assets;
+namespace esoftslimited\blog\assets;
 
 use yii\web\AssetBundle;
 
@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
  */
 class TranslitAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/pendalf89/yii2-blog/assets/source/js';
+    public $sourcePath = '@vendor/esoftslimited/yii2-blog/assets/source/js';
     public $js = ['translit.js'];
     public $depends = ['yii\web\JqueryAsset'];
 }

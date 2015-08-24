@@ -1,6 +1,6 @@
 <?php
 
-namespace pendalf89\blog\controllers;
+namespace esoftslimited\blog\controllers;
 
 use yii\filters\VerbFilter;
 use Yii;

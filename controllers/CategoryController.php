@@ -1,10 +1,10 @@
 <?php
 
-namespace pendalf89\blog\controllers;
+namespace esoftslimited\blog\controllers;
 
 use Yii;
-use pendalf89\blog\models\Category;
-use pendalf89\blog\models\CategorySearch;
+use esoftslimited\blog\models\Category;
+use esoftslimited\blog\models\CategorySearch;
 use yii\web\NotFoundHttpException;
 
 /**

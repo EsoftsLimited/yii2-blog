@@ -1,6 +1,6 @@
 <?php
 
-namespace pendalf89\blog\assets;
+namespace esoftslimited\blog\assets;
 
 use yii\web\AssetBundle;
 
@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
  */
 class BlogAsset extends AssetBundle
 {
-    public $sourcePath = '@vendor/pendalf89/yii2-blog/assets/source';
+    public $sourcePath = '@vendor/esoftslimited/yii2-blog/assets/source';
     public $css = ['css/main.css'];
     public $depends = ['yii\bootstrap\BootstrapAsset'];
 }

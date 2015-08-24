@@ -1,11 +1,11 @@
 {
-    "name": "pendalf89/yii2-blog",
-    "description": "Yii2 blog module",
+    "name": "esoftslimited/yii2-blog",
+    "description": "Yii2 blog module forked from pendalf89 for improvement and learning purpose",
     "license": "GNU GPLv2",
     "authors": [
         {
-            "name": "PendalF",
-            "email": "pendalf@mail.ru"
+            "name": "Elijah Mwangi",
+            "email": "emwangi.g@gmail.com"
         }
     ],
     "minimum-stability": "dev",
@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "pendalf89\\blog\\": ""
+            "esoftslimited\\blog\\": ""
         }
     }
 }
