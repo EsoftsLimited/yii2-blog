@@ -25,7 +25,7 @@
         }
     },
     "extra": {
-        "bootstrap": "esoftslimited\\blog\\Bootstrap",
+        "bootstrap": "esoftslimited\\blog\\Bootstrap"
         
     }
 }
