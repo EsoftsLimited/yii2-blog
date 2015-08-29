@@ -1,10 +1,10 @@
 <?php
 
-namespace pendalf89\blog\controllers;
+namespace esoftslimited\blog\controllers;
 
 use Yii;
-use pendalf89\blog\models\Post;
-use pendalf89\blog\models\PostSearch;
+use esoftslimited\blog\models\Post;
+use esoftslimited\blog\models\PostSearch;
 use pendalf89\filemanager\models\Mediafile;
 use yii\web\NotFoundHttpException;
 

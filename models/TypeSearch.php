@@ -1,11 +1,11 @@
 <?php
 
-namespace pendalf89\blog\models;
+namespace esoftslimited\blog\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use pendalf89\blog\models\Type;
+use esoftslimited\blog\models\Type;
 
 /**
  * TypeSearch represents the model behind the search form about `pendalf89\blog\models\Type`.

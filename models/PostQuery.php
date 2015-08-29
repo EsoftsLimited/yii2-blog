@@ -1,5 +1,5 @@
 <?php
-namespace pendalf89\blog\models;
+namespace esoftslimited\blog\models;
 
 use yii\db\ActiveQuery;
 

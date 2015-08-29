@@ -1,10 +1,10 @@
 <?php
 
-namespace pendalf89\blog\controllers;
+namespace esoftslimited\blog\controllers;
 
 use Yii;
-use pendalf89\blog\models\Type;
-use pendalf89\blog\models\TypeSearch;
+use esoftslimited\blog\models\Type;
+use esoftslimited\blog\models\TypeSearch;
 use yii\web\NotFoundHttpException;
 
 /**

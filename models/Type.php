@@ -1,9 +1,9 @@
 <?php
 
-namespace pendalf89\blog\models;
+namespace esoftslimited\blog\models;
 
 use Yii;
-use pendalf89\blog\Module;
+use esoftslimited\blog\Module;
 
 /**
  * This is the model class for table "blog_type".

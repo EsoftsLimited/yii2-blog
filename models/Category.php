@@ -1,9 +1,9 @@
 <?php
 
-namespace pendalf89\blog\models;
+namespace esoftslimited\blog\models;
 
 use Yii;
-use pendalf89\blog\Module;
+use esoftslimited\blog\Module;
 use pendalf89\filemanager\behaviors\MediafileBehavior;
 use pendalf89\filemanager\models\Mediafile;
 /**

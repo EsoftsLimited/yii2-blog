@@ -1,6 +1,6 @@
 <?php
 
-namespace pendalf89\blog;
+namespace esoftslimited\blog;
 
 use Yii;
 
@@ -40,6 +40,9 @@ class Module extends \yii\base\Module
      * @var string callback function for create post view url. Have $model argument.
      */
     public $viewPostUrlCallback = '';
+
+    /** @var array Model map */
+    public $modelMap = [];
 
     public function init()
     {

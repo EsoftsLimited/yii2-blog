@@ -1,8 +1,8 @@
 <?php
 
-namespace pendalf89\blog\controllers;
+namespace esoftslimited\blog\controllers;
 
-use pendalf89\blog\models\Post;
+use esoftslimited\blog\models\Post;
 use Yii;
 
 class DefaultController extends Controller

@@ -1,6 +1,6 @@
 <?php
 
-namespace pendalf89\blog\widgets;
+namespace esoftslimited\blog\widgets;
 
 use Yii;
 
@@ -9,7 +9,7 @@ use Yii;
  *
  * Example of usage:
  * <?php
- *     use pendalf89\blog\widgets\ViewsCounterWidget;
+ *     use esoftslimited\blog\widgets\ViewsCounterWidget;
  *     echo ViewsCounterWidget::widget(['model' => $model]);
  * ?>
  *

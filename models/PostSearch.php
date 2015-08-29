@@ -1,11 +1,11 @@
 <?php
 
-namespace pendalf89\blog\models;
+namespace esoftslimited\blog\models;
 
 use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
-use pendalf89\blog\models\Post;
+use esoftslimited\blog\models\Post;
 use yii\db\Query;
 
 /**

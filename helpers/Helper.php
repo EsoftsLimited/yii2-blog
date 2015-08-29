@@ -1,10 +1,10 @@
 <?php
 
-namespace pendalf89\blog\helpers;
+namespace esoftslimited\blog\helpers;
 
 use Yii;
-use pendalf89\blog\models\Type;
-use pendalf89\blog\models\Category;
+use esoftslimited\blog\models\Type;
+use esoftslimited\blog\models\Category;
 
 class Helper
 {
