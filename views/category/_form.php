@@ -2,11 +2,11 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use pendalf89\blog\Module;
-use pendalf89\blog\models\Category;
+use esoftslimited\blog\Module;
+use esoftslimited\blog\models\Category;
 use pendalf89\filemanager\widgets\FileInput;
 /* @var $this yii\web\View */
-/* @var $model pendalf89\blog\models\Category */
+/* @var $model esoftslimited\blog\models\Category */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

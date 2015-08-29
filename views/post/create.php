@@ -1,14 +1,14 @@
 <?php
 
 use yii\helpers\Html;
-use pendalf89\blog\Module;
-use pendalf89\blog\helpers\Helper;
-use pendalf89\blog\assets\TranslitAsset;
-use pendalf89\blog\assets\DuplicateAsset;
+use esoftslimited\blog\Module;
+use esoftslimited\blog\helpers\Helper;
+use esoftslimited\blog\assets\TranslitAsset;
+use esoftslimited\blog\assets\DuplicateAsset;
 
 
 /* @var $this yii\web\View */
-/* @var $model pendalf89\blog\models\Post */
+/* @var $model esoftslimited\blog\models\Post */
 
 $this->title = Module::t('main', 'Create New {type}', ['type' => ucfirst($model->type->title)]);
 $this->params['breadcrumbs'][] = ['label' => Module::t('main', 'Blog'), 'url' => ['default/index']];

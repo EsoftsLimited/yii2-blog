@@ -1,10 +1,10 @@
 <?php
 
 use yii\helpers\Html;
-use pendalf89\blog\Module;
+use esoftslimited\blog\Module;
 
 /* @var $this yii\web\View */
-/* @var $model pendalf89\blog\models\Type */
+/* @var $model esoftslimited\blog\models\Type */
 
 $this->title = Module::t('main', 'New post type');
 $this->params['breadcrumbs'][] = ['label' => Module::t('main', 'Blog'), 'url' => ['default/index']];

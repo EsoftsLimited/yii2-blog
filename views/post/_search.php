@@ -2,12 +2,12 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-use pendalf89\blog\models\Post;
-use pendalf89\blog\Module;
+use esoftslimited\blog\models\Post;
+use esoftslimited\blog\Module;
 use kartik\typeahead\Typeahead;
 
 /* @var $this yii\web\View */
-/* @var $model pendalf89\blog\models\PostSearch */
+/* @var $model esoftslimited\blog\models\PostSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 

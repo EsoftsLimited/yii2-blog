@@ -1,12 +1,12 @@
 <?php
 
 use yii\helpers\Html;
-use pendalf89\blog\Module;
-use pendalf89\blog\helpers\Helper;
+use esoftslimited\blog\Module;
+use esoftslimited\blog\helpers\Helper;
 use kartik\alert\Alert;
 
 /* @var $this yii\web\View */
-/* @var $model pendalf89\blog\models\Post */
+/* @var $model esoftslimited\blog\models\Post */
 
 $this->title = Module::t('main', 'Update post “{title}”', ['title' => $model->title]);
 $this->params['breadcrumbs'][] = ['label' => Module::t('main', 'Blog'), 'url' => ['default/index']];

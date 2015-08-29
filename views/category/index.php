@@ -2,11 +2,11 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use pendalf89\blog\Module;
-use pendalf89\blog\models\Category;
+use esoftslimited\blog\Module;
+use esoftslimited\blog\models\Category;
 
 /* @var $this yii\web\View */
-/* @var $searchModel pendalf89\blog\models\CategorySearch */
+/* @var $searchModel esoftslimited\blog\models\CategorySearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Module::t('main', 'Categories');

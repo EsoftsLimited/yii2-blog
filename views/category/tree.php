@@ -1,11 +1,11 @@
 <?php
 
-use pendalf89\blog\Module;
+use esoftslimited\blog\Module;
 use pendalf89\tree\TreeWidget;
 
 /* @var $this yii\web\View */
 /* @var $models array */
-/* @var $model pendalf89\blog\models\Category */
+/* @var $model esoftslimited\blog\models\Category */
 
 $this->title = Module::t('main', 'Category tree');
 $this->params['breadcrumbs'][] = ['label' => Module::t('main', 'Blog'), 'url' => ['default/index']];

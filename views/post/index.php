@@ -2,15 +2,15 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use pendalf89\blog\Module;
-use pendalf89\blog\models\Post;
-use pendalf89\blog\models\Type;
-use pendalf89\blog\models\Category;
-use pendalf89\blog\helpers\Helper;
-use pendalf89\blog\assets\BlogAsset;
+use esoftslimited\blog\Module;
+use esoftslimited\blog\models\Post;
+use esoftslimited\blog\models\Type;
+use esoftslimited\blog\models\Category;
+use esoftslimited\blog\helpers\Helper;
+use esoftslimited\blog\assets\BlogAsset;
 
 /* @var $this yii\web\View */
-/* @var $searchModel pendalf89\blog\models\PostSearch */
+/* @var $searchModel esoftslimited\blog\models\PostSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Module::t('main', 'Posts');

@@ -2,11 +2,11 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-use pendalf89\blog\Module;
-use pendalf89\blog\helpers\Helper;
+use esoftslimited\blog\Module;
+use esoftslimited\blog\helpers\Helper;
 
 /* @var $this yii\web\View */
-/* @var $model pendalf89\blog\models\Type */
+/* @var $model esoftslimited\blog\models\Type */
 
 $this->title = $model->title;
 $this->params['breadcrumbs'][] = ['label' => Module::t('main', 'Blog'), 'url' => ['default/index']];

@@ -1,13 +1,13 @@
 <?php
 
 use yii\helpers\Html;
-use pendalf89\blog\Module;
-use pendalf89\blog\helpers\Helper;
-use pendalf89\blog\assets\BlogAsset;
+use esoftslimited\blog\Module;
+use esoftslimited\blog\helpers\Helper;
+use esoftslimited\blog\assets\BlogAsset;
 use kartik\alert\Alert;
 
 /* @var $this yii\web\View */
-/* @var $searchModel pendalf89\blog\models\TypeSearch */
+/* @var $searchModel esoftslimited\blog\models\TypeSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = Module::t('main', 'Blog');

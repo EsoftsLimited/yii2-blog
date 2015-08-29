@@ -11,7 +11,7 @@ use Yii;
  */
 class Module extends \yii\base\Module
 {
-    public $controllerNamespace = 'pendalf89\blog\controllers';
+    public $controllerNamespace = 'esoftslimited\blog\controllers';
 
     /**
      * If true, entered title on create will be translited from
@@ -56,7 +56,7 @@ class Module extends \yii\base\Module
         Yii::$app->i18n->translations['modules/blog/*'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => 'en-US',
-            'basePath' => '@vendor/pendalf89/yii2-blog/messages',
+            'basePath' => '@vendor/esoftslimited/yii2-blog/messages',
             'fileMap' => [
                 'modules/blog/main' => 'main.php',
             ],

@@ -2,16 +2,16 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
-use pendalf89\blog\models\Category;
-use pendalf89\blog\models\Post;
-use pendalf89\blog\assets\BlogAsset;
-use pendalf89\blog\Module;
+use esoftslimited\blog\models\Category;
+use esoftslimited\blog\models\Post;
+use esoftslimited\blog\assets\BlogAsset;
+use esoftslimited\blog\Module;
 use pendalf89\filemanager\widgets\FileInput;
 use pendalf89\filemanager\widgets\TinyMce;
 use common\widgets\ImageSelector;
 
 /* @var $this yii\web\View */
-/* @var $model pendalf89\blog\models\Post */
+/* @var $model esoftslimited\blog\models\Post */
 /* @var $form yii\widgets\ActiveForm */
 
 BlogAsset::register($this);

@@ -2,11 +2,11 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
-use pendalf89\blog\Module;
-use pendalf89\blog\models\Type;
+use esoftslimited\blog\Module;
+use esoftslimited\blog\models\Type;
 
 /* @var $this yii\web\View */
-/* @var $model pendalf89\blog\models\PostSearch */
+/* @var $model esoftslimited\blog\models\PostSearch */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
